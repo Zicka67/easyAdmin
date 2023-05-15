@@ -37,6 +37,7 @@ class DashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
+        yield MenuItem::linkToRoute('Accueil', 'fas fa-home', 'app_home');
         //Créer une section dans le dashbord
         yield MenuItem::section('E-commerce');
 

@@ -1,0 +1,24 @@
+.menu-bar {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-bar li {
+    display: inline;
+  }
+  
+  .menu-bar li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .menu-bar li a:hover {
+    background-color: #ddd;
+  }
