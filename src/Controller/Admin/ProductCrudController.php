@@ -80,28 +80,28 @@ class ProductCrudController extends AbstractCrudController
         ];
     }
 
-    public function persistEntity(EntityManagerInterface $entityManager, $entityInstance): void
-    {
+    // public function persistEntity(EntityManagerInterface $entityManager, $entityInstance): void
+    // {
     
-        if(!$entityInstance instanceof Product) return; 
+    //     if(!$entityInstance instanceof Product) return; 
 
-        $entityInstance->setCreatedAt(new \DateTimeImmutable());
+    //     $entityInstance->setCreatedAt(new \DateTimeImmutable());
         
-        //On appel la methode parente qui va persist et flush depuis l'abstract controller
-        parent::persistEntity($entityManager, $entityInstance);
-    }
+    //     //On appel la methode parente qui va persist et flush depuis l'abstract controller
+    //     parent::persistEntity($entityManager, $entityInstance);
+    // }
 
-    public function updateEntity(EntityManagerInterface $entityManager, $entityInstance): void
-    {
+    // public function updateEntity(EntityManagerInterface $entityManager, $entityInstance): void
+    // {
         
-        if(!$entityInstance instanceof Product) return; 
+    //     if(!$entityInstance instanceof Product) return; 
 
-        $entityInstance->setUpdatedAt(new \DateTimeImmutable());
+    //     $entityInstance->setUpdatedAt(new \DateTimeImmutable());
         
-        //On appel la methode parente qui va persist et flush depuis l'abstract controller
-        parent::updateEntity($entityManager, $entityInstance);
+    //     //On appel la methode parente qui va persist et flush depuis l'abstract controller
+    //     parent::updateEntity($entityManager, $entityInstance);
 
-    }
+    // }
 
     public function duplicateProduct(AdminContext $context,AdminUrlGenerator $adminUrlGenerator,EntityManagerInterface $entityManager
     ): Response {
